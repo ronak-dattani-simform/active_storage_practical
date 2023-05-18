@@ -1,0 +1,19 @@
+<div id="<%= dom_id user %>">
+
+  <% if user.avatar.attached?  %>
+    <p>
+      <%= image_tag user.avatar.variant(:thumb) %>
+    </p>
+  <% end %>
+
+  <p>
+    <strong>Name:</strong>
+    <%= user.name %>
+  </p>
+
+  <p>
+    <strong>Number:</strong>
+    <%= user.number %>
+  </p>
+
+</div>
